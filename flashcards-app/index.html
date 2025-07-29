@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Английские карточки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Английские карточки</h1>
+        
+        <div class="stats">
+            <span>Всего слов: <span id="total-words">0</span></span>
+            <span>Изучено: <span id="learned-words">0</span></span>
+        </div>
+        
+        <div class="card-container">
+            <div class="flashcard" id="flashcard">
+                <div class="card-face front">
+                    <p id="word-front">Нажмите "Начать"</p>
+                </div>
+                <div class="card-face back">
+                    <p id="word-back"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn">Начать</button>
+            <button id="next-btn" class="btn" disabled>Следующее слово</button>
+            <button id="flip-btn" class="btn" disabled>Перевернуть</button>
+            <button id="know-btn" class="btn" disabled>Знаю</button>
+            <button id="dont-know-btn" class="btn" disabled>Не знаю</button>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div class="add-word-form">
+            <h3>Добавить новое слово</h3>
+            <input type="text" id="russian-word" placeholder="Русское слово">
+            <input type="text" id="english-word" placeholder="Английский перевод">
+            <button id="add-word-btn" class="btn">Добавить</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
